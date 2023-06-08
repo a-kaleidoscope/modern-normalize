@@ -8,23 +8,12 @@ Document
 /**
 1. Correct the line height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
+3. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 
 :where(html) {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/*
-Sections
-========
-*/
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-:where(body) {
 	font-family:
 		system-ui,
 		'Segoe UI',
@@ -33,7 +22,7 @@ Sections
 		Arial,
 		sans-serif,
 		'Apple Color Emoji',
-		'Segoe UI Emoji'; /* 1 */
+		'Segoe UI Emoji'; /* 3 */
 }
 
 /*
